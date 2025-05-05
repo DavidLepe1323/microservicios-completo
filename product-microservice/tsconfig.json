@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "typeRoots": [
+      "./node_modules/@types",   // Para tipos de node_modules
+      "./src/types"               // Asegúrate de incluir la carpeta con tus tipos personalizados
+    ]
+  },
+  "include": [
+    "src/**/*",                   // Incluye todos los archivos en src
+    "src/types/**/*",             // Asegúrate de incluir la carpeta de tipos personalizados
+    "src/types/custom.d.ts"       // Incluye el archivo custom.d.ts si lo tienes
+  ]
+}
